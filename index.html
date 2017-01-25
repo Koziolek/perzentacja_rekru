@@ -29,7 +29,280 @@
     <div class="slides">
 
         <section>
+            <h3>Programming languages</h3>
         </section>
+
+        <section>
+            <h4>What is programming language?</h4>
+            <p class="fragment">Abstraction</p>
+            <p class="fragment">Define flow of execution (program)</p>
+            <p class="fragment">To manipulate data structures</p>
+        </section>
+
+        <section>
+            <h4>Why we need programming language?</h4>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                #### Hello world (bash)
+
+                ```
+                echo "Hello world!"
+                ```
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                #### Hello world (assembly)
+
+                ```
+                segment .data
+                msg     db      "Hello World!", 0Ah
+                segment .text
+                global  _start
+                _start:
+                mov     eax, 4
+                mov     ebx, 1
+                mov     ecx, msg
+                mov     edx, 14
+                int     80h
+                mov     eax, 1
+                xor     ebx, ebx
+                int     0x80
+                ```
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                #### Hello world (binary/hex)
+
+                ```
+                7f454c4602010100000000000000000002003e0001000000b00040000000000040000000000000000801000000000000000000004000380002004000060003000100000005000000000000000000000000004000000000000000400000000000cf00000000000000cf0000000000000000002000000000000100000006000000d000000000000000d000600000000000d0006000000000000d000000000000000d000000000000000000200000000000b804000000bb01000000b9d0006000ba0e000000cd80b80100000031dbcd800048656c6c6f20576f726c64210a002e73796d746162002e737472746162002e7368737472746162002e74657874002e646174610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b000000010000000600000000000000b000400000000000b0000000000000001f0000000000000000000000000000001000000000000000000000000000000021000000010000000300000000000000d000600000000000d0000000000000000d00000000000000000000000000000004000000000000000000000000000000110000000300000000000000000000000000000000000000dd0000000000000027000000000000000000000000000000010000000000000000000000000000000100000002000000000000000000000000000000000000008802000000000000f00000000000000005000000060000000800000000000000180000000000000009000000030000000000000000000000000000000000000078030000000000002e000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000100b00040000000000000000000000000000000000003000200d0006000000000000000000000000000010000000400f1ff000000000000000000000000000000000b00000000000200d0006000000000000000000000000000000000000400f1ff000000000000000000000000000000000f00000010000100b00040000000000000000000000000001600000010000200dd0060000000000000000000000000002200000010000200dd0060000000000000000000000000002900000010000200e00060000000000000000000000000000068656c6c6f2e61736d006d7367005f7374617274005f5f6273735f7374617274005f6564617461005f656e6400
+                ```
+            </script>
+        </section>
+
+        <section>
+            <h3>Programming languages are for people not computers!</h3>
+        </section>
+
+        <section>
+            <h3>Compiler</h3>
+            <p class="fragment">Transform language to binary code</p>
+            <p class="fragment">Make more</p>
+            <p class="fragment">Optimization</p>
+        </section>
+
+        <section>
+            <h3>Interpreter</h3>
+            <p class="fragment">Perform instructions</p>
+            <p class="fragment">Parse source</p>
+        </section>
+
+        <section>
+            <img src="images/grace.jpg"/>
+        </section>
+
+        <section>
+            <h3>FORTRAN</h3>
+        </section>
+
+        <section>
+            <img src="images/ada-lovelace.jpg"/>
+        </section>
+
+        <section>
+            <img src="images/languages.gif"/>
+        </section>
+
+        <section>
+            <section>
+                <h3>C</h3>
+                <p class="fragment">Compiled</p>
+                <p class="fragment">Procedural</p>
+                <p class="fragment">Make us sick since 1972</p>
+            </section>
+
+            <section>
+                <img src="images/denis.jpg"/>
+            </section>
+
+            <section>
+                <pre><code>
+#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+                </code></pre>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>C++</h3>
+                <p class="fragment">Compiled</p>
+                <p class="fragment">Object Oriented</p>
+                <p class="fragment">Superset of C</p>
+            </section>
+
+            <section>
+                <img src="images/bjarne.jpg"/>
+            </section>
+
+            <section>
+                <pre><code>
+#include &lt;iostream&gt;
+
+int main()
+{
+std::cout &lt;&lt; "Hello, world!\n";
+}
+                </code></pre>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Java</h3>
+                <p class="fragment">Compiled</p>
+                <p class="fragment">Object Oriented</p>
+                <p class="fragment">Works on JVM</p>
+            </section>
+
+            <section>
+                <img src="images/james.jpg"/>
+            </section>
+
+            <section>
+                <pre><code>
+public class App {
+
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
+
+}
+                </code></pre>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h3>C#</h3>
+                <p class="fragment">Compiled</p>
+                <p class="fragment">Object Oriented</p>
+                <p class="fragment">Works on .NOT</p>
+            </section>
+
+            <section>
+                <img src="images/ms.jpg"/>
+            </section>
+
+            <section>
+                <pre><code>
+public class Hello1
+{
+   public static void Main()
+   {
+      System.Console.WriteLine("Hello, World!");
+   }
+}
+                </code></pre>
+            </section>
+         </section>
+
+        <section>
+            <p>All those languages is one family</p>
+            <p class="fragment">Nestor is C</p>
+            <p class="fragment">Java vs C# war never changes</p>
+            <p class="fragment">There was J#...</p>
+            <p class="fragment">... was.</p>
+            <p class="fragment">All are Turing Complete</p>
+        </section>
+
+        <section>
+
+            <section>
+                <h3>How to describe document?</h3>
+            </section>
+
+            <section>
+                <h3>We need language to do that!</h3>
+                <p class="fragment">HTML</p>
+                <p class="fragment">It is not programming language</p>
+                <p class="fragment">It is markup language</p>
+                <p class="fragment">Describes structure of document</p>
+            </section>
+
+            <section>
+                <h3>How to make document it nice?</h3>
+            </section>
+
+            <section>
+                <h3>We need language to do that!</h3>
+                <p class="fragment">CSS</p>
+                <p class="fragment">It is not programming language</p>
+                <p class="fragment">It is style sheet language</p>
+                <p class="fragment">Describes presentation of document</p>
+            </section>
+
+            <section>
+                <p>CSS describes how to present HTML</p>
+                <p class="fragment">CSS3+HTML5 are Turing Complete!</p>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Data</h3>
+            </section>
+
+            <section>
+                <h3>How to describe it?</h3>
+                <p class="fragment">SQL</p>
+                <p class="fragment">Non-SQL</p>
+            </section>
+
+            <section>
+                <h3>Databases</h3>
+                <p class="fragment">Store data</p>
+                <p class="fragment">Describe dependencies between data objects</p>
+            </section>
+
+            <section>
+                <h3>Lot of data?</h3>
+                <h3 class="fragment">Big data!</h3>
+            </section>
+
+            <section>
+                <h3>Map reduce</h3>
+                <p class="fragment"><a href="https://static.googleusercontent.com/media/research.google.com/pl//archive/mapreduce-osdi04.pdf">White paper from Google</a></p>
+                <p class="fragment">Jeffrey Dean and Sanjay Ghemawat</p>
+                <p class="fragment">Work with big dataset</p>
+            </section>
+
+            <section>
+                <h3>Hadoop</h3>
+                <p class="fragment">Implementation of map reduce</p>
+                <p class="fragment">Written in Java</p>
+                <p class="fragment">Works on cluster</p>
+            </section>
+
+        </section>
+
+        <section>
+            <h3>What should I learn?</h3>
+            <p class="fragment">Elixir</p>
+            <p class="fragment">Haskell</p>
+            <p class="fragment">Python</p>
+        </section>
+        
     </div>
 </div>
 
